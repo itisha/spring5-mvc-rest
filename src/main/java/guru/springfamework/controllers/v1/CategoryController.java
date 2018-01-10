@@ -10,9 +10,13 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 
+import static guru.springfamework.controllers.v1.CategoryController.BASE_URL_V1;
+
 @Controller
-@RequestMapping("/api/v1/categories/")
+@RequestMapping(BASE_URL_V1)
 public class CategoryController {
+
+    public static final String BASE_URL_V1 = "/api/v1/categories/";
 
     private final CategoryService categoryService;
 
